@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mondrian Navbar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff;
+    }
+
+    /* Center container for navbar */
+    .navbar-container {
+      display: flex;
+      justify-content: center;
+      padding: 20px 0;
+      border-bottom: 5px solid black;
+      /* thick black line */
+      background-color: white;
+    }
+
+    /* The navbar itself */
+    .navbar {
+      display: flex;
+      border: 5px solid black;
+      /* black grid lines */
+    }
+
+    /* Each nav link styled like a Mondrian block */
+    .navbar a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 40px;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      border-right: 5px solid black;
+      /* vertical black line */
+      border-bottom: 5px solid black;
+      /* horizontal black line */
+      font-size: 18px;
+      user-select: none;
+    }
+
+    /* Remove border on last link to avoid double line */
+    .navbar a:last-child {
+      border-right: none;
+    }
+
+    /* Mondrian color blocks */
+    .home {
+      background-color: #E03C31;
+      /* Red */
+    }
+
+    .colors {
+      background-color: #FFD500;
+      /* Yellow */
+    }
+
+    .pictures {
+      background-color: #2561B2;
+      /* Blue */
+    }
+
+    /* Hover effect: invert colors */
+    .navbar a:hover {
+      filter: brightness(85%);
+      cursor: pointer;
+    }
+
+    /* Responsive - stack nav vertically on small screens */
+    @media (max-width: 500px) {
+      .navbar {
+        flex-direction: column;
+        border: none;
+      }
+
+      .navbar a {
+        border: none;
+        border-bottom: 5px solid black;
+        padding: 20px;
+      }
+
+      .navbar a:last-child {
+        border-bottom: none;
+      }
+
+      .navbar-container {
+        border-bottom: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar-container">
+    <nav class="navbar">
+      <a href="file:///C:/Users/Drew/Downloads/knowing-fifth-quail-2025-07-09_182432/Mondrian%20Website/index.html"
+        class="home">Home</a>
+      <a href="file:///C:/Users/Drew/Downloads/knowing-fifth-quail-2025-07-09_182432/Mondrian%20Website/mond.html"
+        class="colors">Colors</a>
+      <a href="file:///C:/Users/Drew/Downloads/knowing-fifth-quail-2025-07-09_182432/Mondrian%20Website/images.html"
+        class="pictures">Pictures</a>
+    </nav>
+  </div>
+
+</body>
+
+</html>
